@@ -13,6 +13,10 @@ To compile these two versions:
 $ make all
 ```
 
+On Python 3.7+, you may need to hack yotta to avoid pickle errors https://github.com/ARMmbed/yotta/issues/863
+```
+grep -r  @fsutils.dropRootPrivs /usr/local/lib/python3.8/site-packages/yotta/
+```
 Firmware hex files are then available in the `dist` directory (not versioned). 
 
 
